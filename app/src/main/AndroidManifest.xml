@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+
+
+    <application
+        android:roundIcon="@drawable/splash"
+        android:icon="@drawable/splash"
+
+        android:allowBackup="true"
+
+        android:label="Society Bots"
+
+        android:theme="@style/Theme.SocietyBots">
+
+
+        <activity
+
+            android:name=".SplashActivity"
+
+            android:exported="true"
+
+            android:screenOrientation="portrait"
+
+            android:theme="@style/Theme.SocietyBots.Splash">
+
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+
+        </activity>
+
+
+        <activity
+
+            android:name=".MainActivity"
+
+            android:exported="false"
+
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="adjustResize"
+
+            android:theme="@style/Theme.SocietyBots" />
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+
+            android:authorities="opnet.fsocietydevs.devbots.fileprovider"
+
+            android:exported="false"
+
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+
+                android:resource="@xml/society_file_paths" />
+
+        </provider>
+
+    </application>
+
+
+</manifest>

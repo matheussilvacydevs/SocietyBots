@@ -1,0 +1,130 @@
+# ============================================================
+# SocietyBots
+# Arquivos que NÃO podem ir para o GitHub
+# ============================================================
+
+# -----------------------------
+# Segredos / ambiente
+# -----------------------------
+.env
+.env.*
+!.env.example
+*.env
+
+# Chaves / certificados
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+signing.properties
+**/signing.properties
+
+# Google/Firebase privados
+google-services.json
+service-account*.json
+firebase-admin*.json
+*serviceAccount*.json
+
+# -----------------------------
+# Android / Gradle
+# -----------------------------
+.gradle/
+**/.gradle/
+local.properties
+
+build/
+**/build/
+
+*.apk
+*.aab
+*.apks
+
+captures/
+.externalNativeBuild/
+.cxx/
+
+# -----------------------------
+# Node
+# -----------------------------
+node_modules/
+**/node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -----------------------------
+# Dados runtime / sessões
+# -----------------------------
+backend/data/
+**/backend/data/
+
+creds.json
+**/creds.json
+
+session.json
+session-*.json
+sessions/
+**/sessions/
+
+auth_info_baileys/
+**/auth_info_baileys/
+
+# -----------------------------
+# Arquivos temporários
+# -----------------------------
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Backups produzidos durante
+# desenvolvimento
+# -----------------------------
+*.bak
+*.bak-*
+*.backup
+*.backup-*
+*.old
+*.orig
+
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+
+# -----------------------------
+# IDEs
+# -----------------------------
+.idea/
+*.iml
+
+.vscode/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# PID / runtime
+*.pid
+backend/backend.pid
+
+# Backups locais
+backups/
+**/backups/
+
+# Backups com timestamp/padrões extras
+*.bak.*
+*.backup.*

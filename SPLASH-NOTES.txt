@@ -1,0 +1,28 @@
+SOCIETY BOTS - SPLASH
+
+IMAGEM CENTRAL:
+app/src/main/res/drawable/splash.png
+
+IMAGEM INFERIOR:
+app/src/main/res/drawable/splash_facebook_logo.png
+
+
+Se no futuro quiser trocar o branding inferior por TEXTO,
+a ideia visual será:
+
+// from
+// Society
+
+ou qualquer outro texto desejado.
+
+Neste momento estamos usando IMAGEM no rodapé para permitir
+substituição simples pelo MT Manager.
+
+IMPORTANTE:
+
+mantenha os nomes:
+
+splash.png
+splash_facebook_logo.png
+
+ao substituir as imagens dentro do APK.

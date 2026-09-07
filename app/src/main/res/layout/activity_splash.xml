@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+
+    <!--
+        LOGO PRINCIPAL
+
+        Arquivo:
+        res/drawable/splash.png
+
+        Para trocar futuramente pelo MT Manager:
+        mantenha exatamente o nome splash.png
+    -->
+
+    <ImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:translationY="-38dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/splash" />
+
+
+    <!--
+        BRANDING INFERIOR
+
+        Arquivo:
+        splash_facebook_logo.png
+
+        Caso futuramente queira texto:
+
+        // <TextView
+        //     android:layout_width="wrap_content"
+        //     android:layout_height="wrap_content"
+        //     android:layout_gravity="bottom|center_horizontal"
+        //     android:layout_marginBottom="70dp"
+        //     android:text="from fsociety"
+        //     android:textColor="#66666F"
+        //     android:textSize="11sp"
+        //     android:letterSpacing="0.10" />
+    -->
+
+    <ImageView
+        android:id="@+id/splashBranding"
+        android:layout_width="78dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="72dp"
+        android:adjustViewBounds="true"
+        android:alpha="0.58"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/splash_facebook_logo" />
+
+</FrameLayout>
